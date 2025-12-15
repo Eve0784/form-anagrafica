@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Anagrafica</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <h2 class="title">Compila la tua Anagrafica</h2>
+        <div class="form-container">
+            <form id="my-form" onsubmit="formSubmit(event)">
+                <div>
+                    <label for="name">Inserire il nome</label>
+                    <input type="text" name="name" id="name" required minlength="3">
+                </div>
+                <div>
+                    <label for="surname">Inserire il cognome</label>
+                    <input type="text" name="surname" id="surname" required minlength="3">
+                </div>
+                <div>
+                    <label for="dob">Data di nascita</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div>
+                    <label for="gender"> Inserire il genere</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">seleziona una opzione</option>
+                        <option value="n/a">Non definito</option>
+                        <option value="male">Maschio</option>
+                        <option value="female">Femmina</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="address">Indirizzo</label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <div>
+                    <label for="tel">Telefono</label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="color">Colore preferito</label>
+                    <input type="color" name="color" id="color">
+                </div>
+
+                <button type="submit">Invia</button>
+
+            </form>
+
+        </div>
+    </body>
+    <script src="./app.js"></script>
+
+</html>
