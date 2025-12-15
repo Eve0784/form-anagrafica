@@ -9,13 +9,7 @@ html, body{
     justify-content: center;
     align-items: center;
 }
-body{
-    background-image: url(./assets/mountain-background.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
+
 .title{
     color: white;
     text-shadow: 1px 1px 2px black;
